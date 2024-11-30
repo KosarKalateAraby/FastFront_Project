@@ -1,0 +1,594 @@
+/* اضافه کردن فونت به پروژه */
+@font-face {
+    font-family: "Shabnam";
+    src: local("Shabnam"),
+    url("../font/ttf/Shabnam.ttf") format("TrueType"),
+    url("../font/eot/Shabnam.eot") format("eot"),
+    url("../font/woff/Shabnam.woff") format("Web Open Font Format"),
+    url("../font/woff2/Shabnam.woff2") format("Web Open Font Format 2");
+}
+@font-face {
+    font-family: "Shabnam-Bold";
+    src: local("Shabnam-Bold"),
+    url("../font/ttf/Shabnam-Bold.ttf") format("TrueType"),
+    url("../font/eot/Shabnam-Bold.eot") format("eot"),
+    url("../font/woff/Shabnam-Bold.woff") format("Web Open Font Format"),
+    url("../font/woff2/Shabnam-Bold.woff2") format("Web Open Font Format 2");
+}
+@font-face {
+    font-family: "Shabnam-Medium";
+    src: local("Shabnam-Medium"),
+    url("../font/ttf/Shabnam-Medium.ttf") format("TrueType"),
+    url("../font/eot/Shabnam-Medium.eot") format("eot"),
+    url("../font/woff/Shabnam-Medium.woff") format("Web Open Font Format"),
+    url("../font/woff2/Shabnam-Medium.woff2") format("Web Open Font Format 2");
+}
+@font-face {
+    font-family: "B Titr";
+    src: local("B Titr"),
+    url("../font/ttf/BTitr.ttf") format("TrueType");
+}
+@font-face {
+    font-family: "B Titr Plus";
+    src: local("B Titr Plus"),
+    url("../font/otf/TitrPlus.otf") format("OpenType");
+}
+/* استایل دکمه رفتن به بالای سایت */
+#scrollbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #fff;
+    border: 2px solid #1A5319;
+    padding: 10px;
+    border-radius: 5px;
+}
+#scrollbutton:hover {
+    background-color: #007437;
+}
+
+/* Style of index.html */
+
+main{
+    background-color: #FEFDED;
+}
+.main_style{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#index_header{
+    height: 180px;
+    padding: 3px;
+    background-color: #BFF6C3;
+
+}
+#header_menu{
+    border-bottom:2px solid black ;
+}
+#header_menu a{
+    color: black;
+    float: left;
+    margin-left: 10px;
+    font-family: "Shabnam";
+    text-decoration: none;
+}
+#logo{
+    width: 80px;
+}
+#header_main {
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* style of Theme button */
+#theme{
+    display: flex;
+    justify-items: center;
+    gap: 5px;
+    margin: 0 auto;
+    background-color: #F2E8C6;
+    padding: 5px;
+    border-radius: 15px;
+    border: 3px solid #C0C78C;
+}
+svg{
+    width: 18px;
+}
+#header_main h2{
+    font-size: 30px;
+    font-family: "B Titr";
+    margin: 0;
+}
+#header_main p{
+    font-family: "Shabnam";
+    margin: 0;
+}
+#main_about{
+    margin-top: 0;
+    height: 220px;
+    background-color: #FEFDED;
+    padding: 20px;
+}
+#main_about h3{
+    padding: 5px;
+    font-family: "B Titr";
+    word-spacing: -2.5px;
+    display: inline-block;
+    width: 800px;
+    margin: 0;
+    font-size: 25px;
+}
+#main_about p{
+    font-family: "Shabnam";
+    width: 800px;
+    display: inline-block;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    text-align: justify;
+}
+#img_main_about{
+    width: 200px;
+    float: left;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#Mahsolat{
+    background-color: #A8CD9F;
+    height: 450px;
+    padding: 10px;
+}
+#index_services h3,
+#Mahsolat h3,
+#services h3,
+#license h3,
+#about_team h3{ 
+    text-align: center;
+    font-family: "B Titr Plus";
+    font-size: 30px;
+    margin: 0;
+}
+#Mahsolat_items,
+#index_services_items,
+#about_team_items{
+    display: flex;
+    gap: 20px;
+}
+#Mahsolat_items{
+    margin: 20px;
+}
+.kala{
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid gray;
+    box-shadow: 0px 0px 5px #007437;
+}
+.kala h6{
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-size: 20px;
+    font-family: "Shabnam";
+    margin: 30px;
+    word-spacing: -3px;
+}
+.kala p{
+    font-family: "Shabnam";
+    color: darkred;
+}
+.kala button{
+    width: 80%;
+    font-family: "Shabnam";
+    background-color: #007437;
+    color: white;
+    border-radius: 10px;
+}
+.kala button:hover{
+    background-color: #A8CD9F;
+    color: black;
+}
+.index_main_kala{
+    width: 150px;
+    border-radius: 10px;
+    border: 3px solid gray;
+}
+#index_services{
+    height: 230px;
+    background-color: #FEFDED;
+    padding: 5px;
+}
+#index_services h5{
+    color: rgb(83, 82, 82);
+    font-family: "Shabnam";
+    text-align: center;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-bottom: 10px;
+}
+.index_services_item{
+    width: 100%;
+    background-color: white;
+    display: inline-flex;
+    padding: 7px;
+    align-items: center;
+    border-radius: 5px;
+    border: 3px solid darkgray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.index_services_item_text h6{
+    font-family: "Shabnam-Bold";
+    font-size: 18px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-right: 15px;
+    margin-bottom: 4px;
+}
+.index_services_item_text p{
+    text-align: right;
+    margin: 0;
+    font-family: "Shabnam";
+    margin-right: 15px;
+}
+.img_services_item{
+    width: 80px;
+}
+#license{
+    height: 250px;
+    background-color: #D6EFD8;
+    text-align: center;
+}
+.img_license{
+    width: 140px;
+    margin: 25px;
+    box-shadow: 0px 0px 10px #1A5319;
+    background-color: white;
+}
+#article{
+    padding: 40px;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FEFDED;
+    border-radius: 10px;
+}
+#article img{
+    width: 200px;
+    border-radius: 10px;
+    display: inline;
+}
+#article_text{
+    width: 80%;
+}
+#article_text h4{
+    font-family: "B Titr Plus";
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-right: 15px;
+    font-size: 22px;
+    margin-bottom: 5px;
+    word-spacing: -3px;
+}
+#article_text p{
+    text-align: justify;
+    text-align: right;
+    margin: 0;
+    font-family: "Shabnam";
+    margin-right: 15px;
+}
+#article button{
+    margin-right: 15px;
+    width: 60%;
+    font-family: "Shabnam";
+    color: white;
+    background-color: #597445;
+    margin-top: 20px;
+    margin-right: 20%;
+    padding: 4px;
+    border-radius: 8px;
+}
+#article button:hover{
+    background-color: #81A263;
+}
+footer{
+    height: 300px;
+    background-color: #BFF6C3;
+    border-radius: 10px;
+}
+#img_footer{
+    float: left;
+    padding: 20px;
+}
+#img_footer img{
+    width: 100px;
+    display: block;
+    margin-top: 30px;
+}
+#footer_text{
+    padding: 25px;
+    color: black;
+    font-family: "Shabnam";
+    width: 50%;
+}
+#footer_text tr{
+    margin: 20px;
+}
+#footer_text a{
+    color: black;
+    text-decoration: none;
+}
+.footer_text_header{
+    font-size: 25px;
+    font-weight: bold;
+}
+footer p{
+    font-family: "Shabnam";
+    color: black;
+    font-size: 10px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+/* Style of services.html */
+
+.services_item{
+    height: 300px;
+    background-color: #55AD9B;
+    margin : 30px 20px;
+    padding: 30px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+}
+.services_item img{
+    width: 250px;
+    display: inline-block;
+}
+.services_text{
+    width: 50%;
+    margin: auto 25px auto;
+}
+.services_text h4{
+    font-family: "B Titr Plus";
+    font-size: 30px;
+    margin: 0;
+}
+.services_text p{
+    font-family: "Shabnam";
+    text-align: justify;
+}
+.services_text button{
+    width: 80%;
+    background-color: #E0FBE2;
+    font-family: "Shabnam";
+    margin-top: 10px;
+    padding: 4px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+.services_text button:hover{
+    background-color: white;
+}
+
+/* Style of about.html */
+
+#about_shop{
+    height: 380px;
+    background-color: #FEFDED;
+    padding: 20px;
+}
+#about_shop img{
+    width: 400px;
+    float: left;
+    border-radius: 10px;
+    border: 3px solid gray;
+}
+#about_shop h1{
+    font-family: "B Titr Plus";
+}
+#about_shop p{
+    font-family: "Shabnam";
+    width: 800px;
+    text-align: justify;
+}
+#about_shop button{
+    background-color: #007437;
+    font-family: "Shabnam";
+    width: 20%;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    margin-right: 230px;
+}
+#about_shop a{
+    color: white;
+}
+#about_shop button:hover{
+    background-color: #1A5319;
+}
+#about_boss{
+    height: 380px;
+    background-color: #4F6F52;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+#about_boss img{
+    width: 350px;
+    border-radius: 20px;
+}
+#about_boss_content{
+    float: left;
+    width: 700px;
+    margin-right: 100px;
+}
+#about_boss_content h2{
+    font-size: 40px;
+    font-family: "B Titr Plus";
+    margin-block-end: 0;
+    margin-block-start: 0;
+    color: white;
+}
+#about_boss_content p{
+    font-family: "Shabnam";
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+}
+#about_boss_p{
+    float: left;
+}
+#about_team{
+    height: 400px;
+    background-color: #FEFDED;
+    justify-content: center;
+    padding: 20px;
+}
+.about_team_item{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px;
+    text-align: center;
+    font-family: "Shabnam-Medium";
+    word-spacing: -2.5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.about_team_item img{
+    width: 150px;
+    border-radius: 10px;
+}
+.team_name{
+    font-size: 20px;
+}
+
+/* Style of contact.html */
+
+#contact_main{
+    display: flex;
+    justify-content: center;
+}
+#contact_form{
+    width: 60%;
+    height: 500px;
+    background-color: #F0F0F0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+#contact_form h3{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: "B Titr Plus";
+    text-align: right;
+    color: #337ab7;
+}
+td label{
+    font-family: "Shabnam";
+    font-size: 15px;
+    margin-top: 15px;
+}
+label{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+td input{
+    width: 350px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: "Shabnam";
+    font-size: 15px;
+}
+textarea{
+    width: 90%;
+    height: 170px;
+    border-radius: 10px;
+    font-family: "Shabnam";
+    font-size: 15px;
+}
+#name ,
+.label ,
+#number{
+    margin-right: 80px;
+}
+#contact_form input[type="button"],
+#contact_form input[type="reset"]{
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: "Shabnam";
+    background-color: #007437;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    width: 20%;
+}
+#contact_form input[type="button"]:hover,
+#contact_form input[type="reset"]:hover{
+    background-color: #1A5319;
+}
+#contact_info,
+#contact_boss{
+    width: 100%;
+    background-color: #F0F0F0;
+    padding: 8px;
+    margin-right: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+#contact_info{
+    height: 280px;
+}
+#contact_boss{
+    margin-top: 20px;
+    height: 230px;
+}
+#contact_info h4,
+#contact_boss h4{
+    font-size: 18px;
+    font-family: "B Titr Plus";
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+#contact_info ul,
+#contact_boss ul{
+    font-family: "Shabnam";
+    text-align: right;
+    color: #337ab7;
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+}
+#contact_info p,
+#contact_boss p{
+    color: #1A5319;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-family: "Shabnam";
+    font-size: 14px;
+}
+#contact_info input[type="button"]{
+    font-size: 15px;
+    font-family: "Shabnam";
+    background-color: #007437;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
+#contact_info input[type="button"]:hover{
+    background-color: #1A5319;
+}
+
+

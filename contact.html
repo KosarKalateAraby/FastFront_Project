@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه لوازم تحریر کارن</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="images/png" href="./images/logo_karen.png">
+</head>
+<body>
+    <header id="index_header">
+        <div id="header_menu">
+            <img src="./images/logo_karen.png" alt="Logo" id="logo">
+            <a href="contact.html">تماس با ما</a>
+            <a href="about.html">درباره ما</a>
+            <a href="services.html">خدمات</a>
+            <a href="#">محصولات</a>
+            <a href="index.html">خانه</a>
+        </div>
+        <div id="header_main">
+            <button id="theme" onclick="Theme();">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" id="sun">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                </svg>  
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" id="moon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                </svg>                            
+            </button>
+            <h2>تماس با ما</h2>
+            <p>خانه &gt; تماس با ما</p>
+        </div>
+    </header>
+    <main id="contact_main" class="main_style">
+        <div id="contact_form" class="contact_js">
+            <h3>فرم تماس با ما</h3>
+            <hr>
+            <form action="" onsubmit="return field(event)">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="title">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3.75v16.5M2.25 12h19.5M6.375 17.25a4.875 4.875 0 0 0 4.875-4.875V12m6.375 5.25a4.875 4.875 0 0 1-4.875-4.875V12m-9 8.25h16.5a1.5 1.5 0 0 0 1.5-1.5V5.25a1.5 1.5 0 0 0-1.5-1.5H3.75a1.5 1.5 0 0 0-1.5 1.5v13.5a1.5 1.5 0 0 0 1.5 1.5Zm12.621-9.44c-1.409 1.41-4.242 1.061-4.242 1.061s-.349-2.833 1.06-4.242a2.25 2.25 0 0 1 3.182 3.182ZM10.773 7.63c1.409 1.409 1.06 4.242 1.06 4.242S9 12.22 7.592 10.811a2.25 2.25 0 1 1 3.182-3.182Z" />
+                            </svg>  
+                            عنوان                    
+                            </label>
+                        </td>
+                        <td>
+                            <label for="name" class="label">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                                  </svg>  
+                                  نام و نام خانوادگی                        
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="title" placeholder="عنوان" autofocus>
+                        </td>
+                        <td>
+                            <input type="text" id="name" placeholder="نام و نام خانوادگی">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                                  </svg>    
+                                  آدرس ایمیل                      
+                            </label>
+                        </td>
+                        <td>
+                            <label for="number" class="label">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                  </svg> 
+                                  شماره موبایل                         
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" id="email" placeholder="ایمیل">
+                        </td>
+                        <td>
+                            <input type="number" id="number" placeholder="شماره موبایل">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="textarea" class="im field">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                                  </svg>  
+                                  متن پیام                        
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <textarea name="message_text" id="textarea" placeholder="متن پیام"></textarea>
+                <input type="button" value="ارسال پیام" onclick="field();">
+                <input type="reset" value="پاک کردن">
+            </form>
+        </div>
+        <aside>
+            <div id="contact_info">
+                <h4>اطلاعات شعبه اصلی</h4>
+                <hr>
+                <ul>
+                    <li>
+                        نام شعبه
+                    </li>
+                </ul>
+                <p>اصلی</p>
+                <ul>
+                    <li>
+                        تلفن تماس
+                    </li>
+                </ul>
+                <p>05100000</p>
+                <ul>
+                    <li>
+                        آدرس
+                    </li>
+                </ul>
+                <p>ایران - مشهد</p>
+                <hr>
+                <input type="button" value="نمایش روی نقشه">
+            </div>
+            <div id="contact_boss">
+                <h4>مدیر فروشگاه</h4>
+                <hr>
+                <ul>
+                    <li>
+                        نام 
+                    </li>
+                </ul>
+                <p>کوثر کلاته عربی</p>
+                <ul>
+                    <li>
+                        تلفن همراه
+                    </li>
+                </ul>
+                <p>09370000000</p>
+                <ul>
+                    <li>
+                        ایمیل
+                    </li>
+                </ul>
+                <p>Kosarkalate87@gmail.com</p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div id="img_footer">
+            <img src="./images/license1.jpg" alt="نشان نماد اعتماد">
+            <img src="./images/license4.png" alt="نشان ثبت ملی">
+        </div>
+        <table id="footer_text">
+            <tr>
+                <td class="footer_text_header">ارتباط با ما</td>
+                <td class="footer_text_header">دسترسی سریع</td>
+                <td class="footer_text_header">محصولات</td>
+            </tr>
+            <tr>
+                <td>ایمیل : <a href="mailto:KarenCo@gmail.com">KarenCo@gmail.com</a></td>
+                <td><a href="index.html" target="_blank">خانه</a></td>
+                <td>کلاسور</td>
+            </tr>
+            <tr>
+                <td>تلفن : <a href="tel:+989370000000">+989370000000</a></td>
+                <td><a href="services.html" target="_blank">خدمات</a></td>
+                <td>دفترچه</td>
+            </tr>
+            <tr>
+                <td>آدرس : ایران ، مشهد</td>
+                <td><a href="about.html" target="_blank">درباره ما</a></td>
+                <td>هایلایتر</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="contact.html" target="_blank">تماس با ما</a></td>
+                <td>اتود</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>روان نویس</td>
+            </tr>
+        </table>
+        <p>&copy; تمامی حقوق وب سایت متعلق به فروشگاه کارن میباشد.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
